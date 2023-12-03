@@ -4,5 +4,6 @@
         <page name='UIKit Examples'/>
         <page name='Live VIew Example'/>
         <page name='Basic Page'/>
+        <page name='DataType'/>
     </pages>
 </playground>
