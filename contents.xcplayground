@@ -7,5 +7,6 @@
         <page name='DataType'/>
         <page name='Expression'/>
         <page name='ControlFlow'/>
+        <page name='9-Function'/>
     </pages>
 </playground>
