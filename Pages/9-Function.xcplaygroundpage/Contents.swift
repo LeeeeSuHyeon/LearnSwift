@@ -1,6 +1,6 @@
-func sayHello(){
-    print("hello")
-}
+//func sayHello(){
+//    print("hello")
+//}
 
 
 // 매개변수로 문자열 하나와 정수 하나를 받으며 문자열 결과를 반환하는 함수
@@ -113,24 +113,58 @@ func sayHello(){
 //print(toFeet(10))   // 0.833333
 
 
+//
+//// 매개변수로 함수 할당
+//func inchesToFeet(_ inches: Float) -> Float{
+//    inches * 0.0833333
+//}
+//
+//func inchesToYards(_ inches : Float) -> Float{
+//    inches * 0.0277778
+//}
+//
+//let toFeet = inchesToFeet
+//let toYards = inchesToYards
+//
+//
+//func outputConversion(_ converterFunc : (Float) -> Float, value : Float){
+//    let result = converterFunc(value)
+//    print("Result of conversion is \(result)")
+//}
+//
+//outputConversion(toFeet, value: 10)     // Result of conversion is 0.833333
+//outputConversion(toYards, value: 10)    // Result of conversion is 0.277778
 
-// 매개변수로 함수 할당
-func inchesToFeet(_ inches: Float) -> Float{
-    inches * 0.0833333
+
+
+//// 클로저 표현식
+//let sayHello = {print("Hello")}
+//sayHello()  // Hello
+
+
+//// 두 개의 정수를 받아 하나의 정수를 결과 반환
+//let multiply = {(_ val1: Int, _ val2 : Int) -> Int in
+//        return val1 * val2
+//}
+//
+//let result = multiply(10, 20)
+//print(result)   // 200
+
+
+//eventstore.requestAccess(to: .reminder, completion: {(granted: Bool, error : Error?) -> Void in
+//    if !granted{
+//        print(error!.localizedDescription)
+//    }
+//})
+
+
+// 클로저
+func functionA() -> () -> Int {
+    var counter = 0
+    func functionB() -> Int {
+        return counter + 10
+    }
+    return functionB
 }
-
-func inchesToYards(_ inches : Float) -> Float{
-    inches * 0.0277778
-}
-
-let toFeet = inchesToFeet
-let toYards = inchesToYards
-
-
-func outputConversion(_ converterFunc : (Float) -> Float, value : Float){
-    let result = converterFunc(value)
-    print("Result of conversion is \(result)")
-}
-
-outputConversion(toFeet, value: 10)     // Result of conversion is 0.833333
-outputConversion(toYards, value: 10)    // Result of conversion is 0.277778
+let myClosure = functionA()
+let result = myClosure()    // 10
