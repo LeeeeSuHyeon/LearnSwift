@@ -2,7 +2,7 @@
 class BankAccount {
     var accountBalance : Float = 0  // 계좌에 남은 잔고
     var accountNumber : Int = 0     // 계좌 번호
-    var fees : Float : 25.00        // 은행 수수료
+    var fees : Float = 25.00        // 은행 수수료
     
     var balanceLessFees : Float{
         get{
@@ -32,9 +32,9 @@ class BankAccount {
     
     
     // 타입 메서드
-//    class func getMaxBalance(){
-//        return 100000.00
-//    }
+    class func getMaxBalance() -> Float{
+        return 100000.00
+    }
     
 }
 
@@ -57,5 +57,5 @@ var maxAllowed = BankAccount.getMaxBalance()
 
 
 // 현재의 잔액에서 수수료를 뺀 값을 얻는 코드와 새로운 값을 설정하는 코드
-var balance2 = account1.balaceLessFees
-account2.balaceLessFees = 12123.12
+var balance2 = account1.balanceLessFees
+account1.balanceLessFees = 12123.12

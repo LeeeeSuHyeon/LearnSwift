@@ -9,5 +9,6 @@
         <page name='ControlFlow'/>
         <page name='Class'/>
         <page name='9-Function'/>
+        <page name='11-Inheritance'/>
     </pages>
 </playground>
