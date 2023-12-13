@@ -10,5 +10,6 @@
         <page name='Class'/>
         <page name='9-Function'/>
         <page name='11-Inheritance'/>
+        <page name='12-Struct'/>
     </pages>
 </playground>
