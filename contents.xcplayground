@@ -12,5 +12,6 @@
         <page name='11-Inheritance'/>
         <page name='12-Struct'/>
         <page name='13-Property'/>
+        <page name='14-ArrayDictionary'/>
     </pages>
 </playground>
