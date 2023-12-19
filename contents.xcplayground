@@ -13,5 +13,6 @@
         <page name='12-Struct'/>
         <page name='13-Property'/>
         <page name='14-ArrayDictionary'/>
+        <page name='15-ErrorHandling'/>
     </pages>
 </playground>
